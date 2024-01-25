@@ -146,3 +146,23 @@ if(userName===password1){
 
 //write a program that asks user for
 // addition  of 2 numbers and alert the result
+
+/*
+let num1 = 10;
+let num2 = 9.998877;
+let sum = num1+num2;
+console.log("the addition of 2 numbers is:" +sum);
+*/
+
+/*
+let num1 = prompt("enter your first number");
+let num2 = prompt("enter your second number");
+let result = num1+num2;
+alert("the addition of 2 numbers is:" +result);
+*/
+
+let num1 = 10;
+let num2 = 9.998877;
+let sum = num1+num2;
+alert("the addition of 2 numbers is:" +sum);
+
