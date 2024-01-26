@@ -134,11 +134,10 @@ if(username===password){
  /*
 const userName = prompt("what is your username");
 const password1 = prompt("enter password");
-
 if(userName===password1){
     alert(`welcome ${userName}`); //string literal
 }else{
-    alert("try again.enter valid input");
+    alert("try again.enter valid input.invalid un or pw");
     
 }
 */
@@ -161,8 +160,118 @@ let result = num1+num2;
 alert("the addition of 2 numbers is:" +result);
 */
 
+/*
 let num1 = 10;
 let num2 = 9.998877;
 let sum = num1+num2;
+let sub = num1-num2;
+let mul = num1*num2;
+let div = num1/num2;
+let mod = num1%num2;
 alert("the addition of 2 numbers is:" +sum);
+alert("the subtraction of 2 numbers is:" +sub);
+alert("the multiplication of 2 numbers is:" +mul);
+alert("the division of 2 numbers is:" +div);
+alert("the mode of 2 numbers is:" +mod);
+*/
+
+//alert(10);
+//alert('pi');
+
+// string, number, boolean
+// type conversion/type casting
+//const userNum = Number(prompt("what is your number"));
+/*
+const userNum = prompt("what is your number");
+const userTrueNum = Number(userNum);
+const userString = String(userTrueNum);
+const userBoolean = Boolean(userString);
+*/
+
+
+//ternary operator
+/*
+userName === password1
+  ? alert(`welcome ${userName}`)
+  : alert("try again.enter valid input.invalid un or pw");
+  */
+
+
+ // const day = prompt("enter the day");
+ // day === "sun" ? alert("sun") : day === "mon" ? alert("mon") : alert("tues");
+
+
+  //const month = prompt("enter the month");
+  //month === "jan" ? alert("jan") : month === "feb" ? alert("feb") : alert("mar")
+
+  //ask user for name and time(number)
+  // 5 to 12 => morning
+  // 12 to 3 =>afternoon
+  // 3 to 6 => evening
+
+/*
+  const myName = prompt("enter your name");
+  const time = Number(prompt("enter your entry time"));
+  time >= 5 && time <=12
+  ? alert(`good morning ${name}`)
+  : time >= 1 && time  <3
+  ? alert(`good afternoon ${name}`)
+  : alert(`good evening ${name}`);
+  */
+
+
+  // 1 to 10 print
+  // starting condition,stopping condition,running condition
+ // 2,3,5 while,do while for loop multiplicaton table
+
+ /*
+  for(let i = 0; i<= 10; i++){
+    console.log(i);
+  }
+
+  let j = 1;
+  while (j <=10) {
+    console.log(j);
+    j++;
+  }
+
+  let k = 1;
+  do {
+    console.log(k);
+    k++;
+  } while (k<=10);
+  */
+
+/*
+  let num = 2;
+  let numberOfMultiples = 5;
+
+  for( i = 1; i<=numberOfMultiples; i++){
+  let multiples = num*i;
+  console.log(multiples);
+  }
+
+
+  let num1 = 3;
+  let numberOfMultiples1 = 7;
+  let j = 1;
+  while(j<=numberOfMultiples1){
+    let multiples1 = num1*j;
+    console.log(multiples1);
+    j++;
+  }
+  */
+
+   let num2 = 5;
+   let numberOfMultiples2 = 9;
+   let k = 1;
+   do {
+    let multiples1 = num2*k;
+    console.log(multiples1);
+    k++
+   } while(k<=numberOfMultiples2);
+
+
+
+
 
