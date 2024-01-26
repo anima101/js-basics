@@ -222,7 +222,7 @@ userName === password1
 
   // 1 to 10 print
   // starting condition,stopping condition,running condition
- // 2,3,5 while,do while for loop multiplicaton table
+ 
 
  /*
   for(let i = 0; i<= 10; i++){
@@ -242,6 +242,8 @@ userName === password1
   } while (k<=10);
   */
 
+
+// 2,3,5 while,do while for loop multiple table
 /*
   let num = 2;
   let numberOfMultiples = 5;
@@ -260,7 +262,7 @@ userName === password1
     console.log(multiples1);
     j++;
   }
-  */
+
 
    let num2 = 5;
    let numberOfMultiples2 = 9;
@@ -270,6 +272,140 @@ userName === password1
     console.log(multiples1);
     k++
    } while(k<=numberOfMultiples2);
+   */
+
+   //multiplication table for 2,3,5 using for loop
+   /*
+   // for loop for 2
+   console.log("multiplication table for 2");
+   for( let i =1; i<=10; i++) {
+    let result = 2*i;
+    console.log(result);
+   }
+   */
+
+   /*
+   // while loop for 2
+   console.log("multiplication table for 2");
+    let i = 1;
+    while( i <= 10) {
+    let result = 2 * i;
+    console.log(result);
+    i++;
+   }
+   */
+
+
+   /*
+   // do while loop for 2
+   console.log("multiplication table for 2");
+   let i = 1;
+   do {
+     let result = 2 * i;
+     console.log(result);
+     i++;
+   } while (i <= 10);
+   */
+
+
+   /*
+  // for loop for 3
+   console.log("\multiplication table for 3");
+   for (let i = 1; i <= 10; i++) {
+     let result = 3 * i;
+     console.log(result);
+   }
+   */
+
+   /*
+   // while loop for 3
+   console.log("\multiplication table for 3");
+   let i = 1;
+   while( i <= 10) {
+    let result = 3 * i;
+    console.log(result);
+    i++;
+   }
+   */
+  
+   /*
+   // do while loop for 3
+    console.log("multiplication table for 3");
+    let i = 1;
+    do {
+      let result = 3 * i;
+      console.log(result);
+      i++;
+    } while (i <= 10);
+    */
+
+   /*
+   // for loop for 5
+   console.log("multiplication table for 5");
+   for (let i = 1; i <= 10; i++) {
+     let result = 5 * i;
+     console.log(result);
+   }
+   */
+
+   /*
+   // while loop for 5
+   console.log("multiplication table for 5");
+   let i = 1;
+   while (i <= 10) {
+     let result = 5 * i;
+     console.log(result);
+     i++;
+   }
+   */
+
+
+   /*
+   // do while loop for 5
+   console.log("multiplication table for 5");
+   let i = 1;
+   do {
+     let result = 5 * i;
+     console.log(result);
+     i++;
+   } while (i <= 10);
+   */
+
+
+  // multiplication table for numbers using prompt
+     /*
+    let number = prompt("enter your number");
+    for (let i = 1; i <= 10; i++) {
+      let result = number * i;
+      console.log(result);
+    }
+    */
+
+      /*
+     let number1 = prompt("enter your number");
+     let j = 1;
+     while( j <= 10) {
+      let result1 = number1*j;
+      console.log(result1);
+      j++;
+     }
+     */
+
+      /*
+     let number2 = prompt("enter your number");
+     let k = 1;
+     do {
+      let result2 = number2*k;
+      console.log(result2)
+      k++;
+     } while( k<= 10);
+     */
+
+
+
+
+
+
 
 
 
