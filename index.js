@@ -401,6 +401,34 @@ userName === password1
      } while( k<= 10);
      */
 
+     // write a js program to check whether a given positive number is a multiple of 3 0r 7.
+
+     const num = prompt("enter the number:");
+     if ( num % 3 === 0 || num % 7 ===0) {
+      console.log( num +  "n is a multiple of 3 0r 7");
+     } else {
+      console.log(num +  "is  not a multiple of 3 0r 7");
+     }
+     
+
+
+     /* Write a JavaScript program to compute the sum of the two given integers.
+      If the two values are the same, then return triple their sum.
+      */
+
+     /*
+     const num1 = parseInt(prompt("enter the first integer"));
+     const num2 = parseInt(prompt("enter the second integer")); 
+     if(num1===num2) {
+       sum1 = 3* (num1 + num2);
+     } else {
+       sum1 = num1+num2;
+     }
+    console.log( "result :" ,sum1);
+    */
+
+
+
 
 
 
