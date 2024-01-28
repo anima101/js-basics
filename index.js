@@ -403,12 +403,14 @@ userName === password1
 
      // write a js program to check whether a given positive number is a multiple of 3 0r 7.
 
+     /*
      const num = prompt("enter the number:");
      if ( num % 3 === 0 || num % 7 ===0) {
       console.log( num +  "n is a multiple of 3 0r 7");
      } else {
       console.log(num +  "is  not a multiple of 3 0r 7");
      }
+     */
      
 
 
@@ -429,9 +431,133 @@ userName === password1
 
 
 
+    //function define
+    //ES5
+    /*
+    function sum (a,b) {
+      // logic
+      return a+b;
+    }
+
+    const result = sum(2,2);
+    const result1 = sum(2, 244);
+    const result2 = sum(2, 209);
+    const result3 = sum(2, 2435);
+    console.log(result,result1,result2,result3);
+    */
 
 
 
+    //ES6
+    /*
+    const sum = (a,b) => {
+      return a+b;
+    };
+
+    const result = sum(2, 2);
+    const result1 = sum(2, 244);
+    const result2 = sum(2, 209);
+    const result3 = sum(2, 2435);
+    console.log(result, result1, result2, result3);
+    */
+
+    // write a function to do multiplication table of  2
+    // define function
+    /*
+    const mul = (table) => {
+      let i=1;
+      do {
+        console.log(table*i);
+        i++;
+      } while(i<=10);
+    };
+
+    //function call
+    mul(2);
+    */
+      
+
+
+    // write a function to find the area of rectange
+
+    /*
+      function area(l, b) {
+        // logic
+        return l * b;
+      }
+         const result4 = area(4,5);
+         console.log(result4);
+         */
+
+         //wite a js function that reverses a number
+          /*
+         const reverse = (number) => {
+          const str = String(number);
+          let newNum = "";
+          for(let i = str.length-1; i>=0;i--){
+            newNum += str[i];
+          }
+          return newNum;
+
+         };
+
+         const res = Number(reverse(12345));
+         console.log({res});
+         */
+
+
+
+         // write a js function that creates a commaformatter.
+         // exmaple x= 10000; expected output:10,000
+         // exmaple x= 1000000; expected output:1,000,000
+
+
+         // 1. define a function
+         // 2. call a function (10000) as param
+         // 3. convert to string
+         // 4. calculate the length of string
+
+
+          const commaFormatter = (number) => {
+          const string = String(number);
+          let newString = "";
+          reverseString = "";
+          counter = 0;
+
+          for (let i = string.length-1; i>=0; i--){
+            console.log({counter,newString});
+            if(counter===3){
+              newString += ",";
+              counter=0;
+            }
+            newString += string[i];
+            counter++;
+          }
+          for(let i = newStringtring.length-1; i>=0; i--){
+            reverseString += newString[i];
+          }
+
+          return reverseString;
+        };
+
+        const re = commaFormatter(1000000);
+        console.log({comma: re});
+
+
+
+        // write a js function that converts regular text to proper case
+        // eg anima yadav= Anima Yadav
+
+        // write a js function that converts long text to ... format
+        //"raktim is a mern stack teacher". he is teaching us mern course from 20th jan"
+        // ||
+        // v
+        // "raktim is a mern stack teacher. he is...."
+
+
+
+
+    
 
 
 
