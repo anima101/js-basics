@@ -517,17 +517,17 @@ userName === password1
          // 3. convert to string
          // 4. calculate the length of string
 
-
+         /*
           const commaFormatter = (number) => {
           const string = String(number);
-          let newString = "";
-          reverseString = "";
+          let newString = "",
+          reverseString = "",
           counter = 0;
 
           for (let i = string.length-1; i>=0; i--){
             console.log({counter,newString});
             if(counter===3){
-              newString += ",";
+              newString += ",",
               counter=0;
             }
             newString += string[i];
@@ -543,16 +543,101 @@ userName === password1
         const re = commaFormatter(1000000);
         console.log({comma: re});
 
+        */
+
 
 
         // write a js function that converts regular text to proper case
         // eg anima yadav= Anima Yadav
+                
+        /*
+          function ProperCase(inputText) {
+          if (!inputText) {
+          return '';
+          }
+
+         let result = '';
+         let capitalizeNext = true;
+        for (let i = 0; i < inputText.length; i++) {
+        const currentChar = inputText.charAt(i);
+
+        if (capitalizeNext && currentChar !== ' ') {
+         result += currentChar.toUpperCase();
+         capitalizeNext = false;
+        } else {
+          result += currentChar.toLowerCase();
+        }
+  
+           if (currentChar === ' ') {
+            capitalizeNext = true;
+            }
+          }
+
+          return result;
+          }
+
+            const inputText = prompt("enter the text");
+            const properCaseText = ProperCase(inputText);
+
+            console.log(`Original text: ${inputText}`);
+            console.log(`Proper case text: ${properCaseText}`);
+            */
 
         // write a js function that converts long text to ... format
         //"raktim is a mern stack teacher". he is teaching us mern course from 20th jan"
         // ||
         // v
         // "raktim is a mern stack teacher. he is...."
+
+        /*
+        function truncateText(text, maxLength) {
+          if (text.length > maxLength) {
+            return text.substring(0, maxLength) + "...";
+          } else {
+            return text;
+          }
+        }
+  
+        const longText = "raktim is a mern stack teacher. he is teaching us mern course from 20th jan.";
+        const truncatedText = truncateText(longText, 37);
+
+        console.log(`Original text: ${longText}`);
+        console.log(`Truncated text: ${truncatedText}`);
+
+        */
+
+        // write a js function that replaces c++ to MERN
+        // "raktim is a c++ stack teacher". he is teaching us mern course from 20th jan"
+        // "raktim is a MERN stack teacher". he is teaching us MERN course from 20th jan"
+        /*
+         function replaceText(originalText,searchText,replacementText) {
+          const modifiedText = originalText.replace(new RegExp(searchText,"g") , replacementText);
+          return modifiedText;
+         }
+
+          const inputText =
+            "raktim is a c++  teacher. he is teaching us c++ course from 20th jan. c++ is advanced course";
+           const searchText = "c++";
+           const replacementText = "MERN stack";
+           modifiedText = replaceText(inputText,searchText,replacementText) ;
+
+           console.log(`original text : ${inputText}`);
+           console.log(`replacedtext : ${modifiedText}`);
+           */
+
+        
+         
+         function replaceText(Text) {
+           const modifiedText = Text.replace(/c\+\+/gi , "MERN stack ");
+           return modifiedText;
+         }
+         const originalText = "raktim is a c++  teacher. he is teaching us c++ course from 20th jan. c++ is advanced course";
+         const modifiedText = replaceText(originalText);
+         console.log(`Original text: ${originalText}`);
+         console.log(`Modified text: ${modifiedText}`);
+         
+
+
 
 
 
