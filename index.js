@@ -610,31 +610,34 @@ userName === password1
         // "raktim is a c++ stack teacher". he is teaching us mern course from 20th jan"
         // "raktim is a MERN stack teacher". he is teaching us MERN course from 20th jan"
         /*
+        
          function replaceText(originalText,searchText,replacementText) {
-          const modifiedText = originalText.replace(new RegExp(searchText,"g") , replacementText);
+          const modifiedText = originalText.replace(new RegExp(searchText,'g') , replacementText);
           return modifiedText;
          }
 
           const inputText =
-            "raktim is a c++  teacher. he is teaching us c++ course from 20th jan. c++ is advanced course";
-           const searchText = "c++";
+            "raktim is a cpp  teacher. raktim shrestha is teaching us c++ course from 20th jan. cpp is advanced course";
+           const searchText = "cpp";
            const replacementText = "MERN stack";
            modifiedText = replaceText(inputText,searchText,replacementText) ;
 
            console.log(`original text : ${inputText}`);
            console.log(`replacedtext : ${modifiedText}`);
            */
+           
 
-        
-         
+         /*
          function replaceText(Text) {
            const modifiedText = Text.replace(/c\+\+/gi , "MERN stack ");
            return modifiedText;
          }
          const originalText = "raktim is a c++  teacher. he is teaching us c++ course from 20th jan. c++ is advanced course";
          const modifiedText = replaceText(originalText);
+
          console.log(`Original text: ${originalText}`);
          console.log(`Modified text: ${modifiedText}`);
+         */
          
 
 
