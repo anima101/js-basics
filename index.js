@@ -638,7 +638,168 @@ userName === password1
          console.log(`Original text: ${originalText}`);
          console.log(`Modified text: ${modifiedText}`);
          */
+
+
+         // write a js function to function that validates if the user input string is email or not
+
+
+         // write a js function that count number of vowels used in the string.
+
+
+         // default 
+         /*
+         const sayHi = (name) => {
+          console.log(`hi ${name}`);
+         };
+         sayHi = "anima yadav"
+         */
+
+         //parameterized
+
+         /*
+         // default values in param
+         const sayHiAgain = (fname,lname) => {
+          console.log(` hi again ${fname} ${lname}`);
+         };
+         */
+         /*
+         // implicit
+         const sum = (a,b) => a+b;
+         // explicit
+         const sum1 = (a,b) => {
+          return a+b;
+         };
+         // IIFE
+         //immediately invoked functional expression
+         (function () {
+          console.log("hello");
+         }) ();
+         // closure
+         // inline
+         const a = function () {};
+         // anynomous
+         (function () {
+          return "hello";
+         });
+         */
          
+         // call back 
+         /*
+         const print = (name) => {
+          return `print is ${name}`;
+         };
+
+         const mainFn = (fname,lname,cb) => {
+          const name = fname.concat("", lname);
+          return cb(name);
+         };
+
+         const resu = mainFn("anima","yadav",print);
+         console.log(resu);
+         */
+
+         // write a js function that validates if the password is valid password or not
+         //validation rules are
+         // at least 1 lowercase
+         // at least 1 uppercase
+         // at least 1 number
+         // at least 1 symbol
+         // password length >= 8
+
+         // output true or false
+
+
+         //
+         /*
+         const obj = {
+          name : "anima",
+          password : "123456",
+          email : "animaydv800@gmail.com",
+          address : "kalaiya",
+         };
+
+         // spread operator
+         const { password, address , ...test} = obj; // object destructuring
+         console.log({test});
+         */
+
+         // use given object and loop through its properties
+         // and if it has property "discount"
+
+         /*
+         let prod = {
+          name : "headphones",
+          price : 83.7,
+          discount : "7%",
+         };
+         
+         const seeDiscount = (obj) => {
+          return Object.hasOwn(obj, "discount")
+          ? `already discounted by ${obj.discount}`
+          : " no discount found";
+         };
+         
+
+         const resp = seeDiscount(prod);
+         console.log({resp});
+
+         const findDiscount = (obj) => {
+          delete obj.discount;
+          const discountPercent = obj.price > 100 ? 10 :7;
+          obj.discount = `${discountPercent}%`;
+          obj.price = obj.price -(discountPercent/100)* obj.price;
+          return obj;
+         };
+
+         console.log(seeDiscount(prod));
+         */
+         
+            
+         // CRUD operations in js array
+
+         // creating an array in js
+         let fruits = ["apple", "banana", "orange", "litchi"];
+         console.log(fruits);
+
+         // reading an array in js
+
+         // reading array using index
+        console.log(fruits[0]);
+        console.log(fruits[2]);
+        
+        // reading array using  loop
+        for(let i = 0; i<fruits.length; i++) {
+          console.log(fruits[i]);
+        }
+
+        // updating array in js
+        fruits[0] = "mango";
+        fruits[1] = "watermelon";
+        fruits[2] = "grapes";
+        fruits[3] = "pineapple";
+
+        // deleting array in js
+        fruits.splice(2,2);
+
+
+
+         
+
+         // sort the age in ascending order by using array 
+         /*
+         const group = [
+         { name : "raktim", age : 30},
+         {name: "ruchi",age : 26},
+         {name:"anima" ,age : 22},
+         {name : "sumit" ,age :19},
+        ];
+
+        group.sort ((a,b) => a.age-b.age);
+        console.log(group);
+        */
+  
+
+        // sort array in ascending order
 
 
 
