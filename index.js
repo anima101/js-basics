@@ -754,7 +754,7 @@ userName === password1
          console.log(seeDiscount(prod));
          */
          
-            
+        /*
          // CRUD operations in js array
 
          // creating an array in js
@@ -766,7 +766,7 @@ userName === password1
          // reading array using index
         console.log(fruits[0]);
         console.log(fruits[2]);
-        
+
         // reading array using  loop
         for(let i = 0; i<fruits.length; i++) {
           console.log(fruits[i]);
@@ -777,13 +777,16 @@ userName === password1
         fruits[1] = "watermelon";
         fruits[2] = "grapes";
         fruits[3] = "pineapple";
+        console.log(fruits);
 
         // deleting array in js
-        fruits.splice(2,2);
+       // fruits.splice(2,2);
+       //fruits.pop();
+       //fruits.shift();
+       console.log(fruits);
+        */
+        
 
-
-
-         
 
          // sort the age in ascending order by using array 
          /*
@@ -799,7 +802,129 @@ userName === password1
         */
   
 
-        // sort array in ascending order
+        // sort array in descending order
+        /*
+        const group = [
+          { name: "raktim", age: 30 },
+          { name: "ruchi", age: 26 },
+          { name: "anima", age: 22 },
+          { name: "sumit", age: 19 },
+        ];
+
+        group.sort((a, b) => b.age - a.age);
+        console.log(group);
+        */
+
+        // write a js function that checks if the user has access or not.
+        // return boolean value
+        /*
+        const userRole = ["user","vendor"];
+        const sysRole = ["admin","vendor"];
+
+
+        const checkRole = ( userRole, sysRole) => { 
+          // compare two arrays and return boolean result
+           const Access = userRole.some((role) => sysRole.includes(role));
+           return Access;
+        };
+       
+        const Access = checkRole(userRole, sysRole);
+        console.log(Access);
+        */
+        
+
+        // write a js function that creates slug
+        // eg: Understanding Nestjs Architecture
+        //=> understanding-nestjs-architecture
+
+        /*
+        function createSlugs(heading) {
+          return heading .toLowerCase() .replace(/\s+/g, "-") .replace(/[^\w-]/g, "");
+        }
+
+        const originalheading = "Understanding Nestjs Architecture";
+        const slug = createSlugs(originalheading);
+
+        console.log(slug);
+        */
+
+
+        // write a js function that creates a sum of numbers from 1 to 10
+        // eg: [1,2,3,4,5,6,7,8,9,10]
+        /*
+        const getSum = (arr) => arr.reduce((acc,curr) => acc +curr,0);
+        const resp = getSum([1,2,3,4,5,6,7,8,9,10]);
+        console.log({resp});
+        */
+       
+
+        // let food = ["noodle","pasta","ice-cream"];
+        // let food = ["fries","ice-cream","pizza"];
+        // compare the 2 arrays and find the common food if any
+        /*
+        let food1 = ["noodle","pasta","ice-cream"];
+        let food2 = ["fries","ice-cream","pizza"];
+
+        let commonFood = food1.filter((foodItems) => food2.includes(foodItems));
+        console.log("Common food:", commonFood);
+        */
+
+        // immutable js
+        // date
+        
+     //write a js function that works as a pagination
+       // const arr = ["raktim","ruchi","anima","sumit","samundra","kuber"];
+      //  const page = 1; //dynamic 
+       // const limit = 2; // dynamic
+        // example
+        // page 1 => ["raktim" , "ruchi"]
+        // page 2 => ["anima","sumit"]
+        // page 3 => ["samundra","kuber"]
+        // page 4 => []
+
+        /*
+        const arr = ["raktim","ruchi","anima","sumit","samundra","kuber"];
+        const page = 4; //dynamic 
+        const limit = 2; // dynamic
+        
+        const startIndex = (page - 1) * limit;
+        const endIndex = page * limit;
+        const currentPage = arr.slice(startIndex, endIndex);
+
+        console.log(`Page ${page} =>`, currentPage);
+        */
+
+        /*
+        function paginateArray(arr, page, limit) {
+          const startIndex = (page - 1) * limit;
+          const endIndex = page * limit;
+          const currentPage = arr.slice(startIndex, endIndex);
+          return currentPage;
+        }
+
+        const arr = ["raktim", "ruchi", "anima", "sumit", "samundra", "kuber"];
+        const page1 = paginateArray(arr, 1, 2);
+        const page2 = paginateArray(arr, 2, 2);
+        const page3 = paginateArray(arr, 3, 2);
+        const page4 = paginateArray(arr, 4, 2);
+
+        console.log("Page 1 =>", page1);
+        console.log("Page 2 =>", page2);
+        console.log("Page 3 =>", page3);
+        console.log("Page 4 =>", page4);
+        */
+
+
+
+        
+
+        
+
+        
+
+
+        
+
 
 
 
