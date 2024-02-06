@@ -915,6 +915,343 @@ userName === password1
         */
 
 
+        // write a js function that finds the bird name starting with e character
+        /*
+        const birds = ["parrot","Eagles","Emus","Caracaras","egrets"];
+        const eBirds = (birds) => {
+
+
+        }
+        */
+
+        const characters = [
+          {
+            name: "Luke Skywalker",
+            height: "172",
+            mass: "77",
+            eye_color: "blue",
+            gender: "male",
+          },
+          {
+            name: "Darth Vader",
+            height: "202",
+            mass: "136",
+            eye_color: "yellow",
+            gender: "male",
+          },
+          {
+            name: "Leia Organa",
+            height: "150",
+            mass: "49",
+            eye_color: "brown",
+            gender: "female",
+          },
+          {
+            name: "Anakin Skywalker",
+            height: "188",
+            mass: "84",
+            eye_color: "blue",
+            gender: "male",
+          },
+        ];
+
+        // perform given operations using mapping function
+
+        //Get an array of all names
+        /*
+        const getAllName = (characters) =>
+        characters.map((character) => character.name);
+        const resp = getAllName(characters);
+        console.log({resp});
+        */
+
+        
+       //Get an array of all heights
+       /*
+          const getAllHeights = (characters) =>
+          characters.map((character) => character.height);
+          const resp1 = getAllHeights(characters);
+          console.log({ resp1 });
+          */
+
+              
+         // Get an array of objects with just name and height properties
+         /*
+         const nameAndHeightArray = characters.map(character => {
+         return {
+         name: character.name,
+         height: character.height
+        };
+        });
+
+        console.log(nameAndHeightArray);
+        */
+        
+         // Get an array of all first names
+         /*
+         const firstNames = characters.map((character) => {
+           // Splitting  the full name by space and get the first part
+           const firstName = character.name.split(" ")[0];
+           return firstName;
+         });
+         console.log(firstNames);
+         */
+        
+        // perform given operations using reduce function
+
+        //Get the total mass of all characters
+          /*
+          const totalMass = (characters) => {
+            return characters.reduce(
+              (preVal,currVal)) => preVal+( Number(currentVal.mass),
+              0
+              );
+
+            };
+            const mass = totalMass(characters);
+            console.log({mass});
+            
+            */
+           /*
+           const totalMass = characters.reduce((prev, curr) => {
+             // Convert mass to a number and add it to the accumulator (prev)
+             return prev + parseInt(curr.mass);
+           },
+            0 ); // Initialize accumulator with 0
+           console.log(totalMass);
+           */
+
+           // Get the total height of all characters
+           /*
+           const totalHeight = characters.reduce((prev, curr) => {
+             // Convert height to a number and add it to the accumulator (prev)
+             return prev + parseInt(curr.height);
+           },
+            0 ); // Initialize accumulator with 0
+           console.log(totalHeight);
+           */
+
+           // Get the total number of characters in all the character names
+           /*
+           const totalCharacters = characters.reduce((total, character) => {
+             // Add the length of each character's name to the total
+             return total + character.name.length;
+           },
+            0 ); // Initialize the total with 0
+           console.log(totalCharacters);
+           */
+
+           // Get the total number of characters by eye color (hint. a map of eye color to count)
+           /*
+           const eyeColorCount = characters.reduce((eyeColorMap, character) => {
+             // Increment the count for the current character's eye color
+             if (eyeColorMap[character.eye_color]) {
+               eyeColorMap[character.eye_color]++;
+             } else {
+               eyeColorMap[character.eye_color] = 1;
+             }
+             return eyeColorMap;
+           }, {});
+           console.log(eyeColorCount);
+           */
+
+           // perform given operations using filter function
+
+           //Get characters with mass greater than 100
+           /*
+           const charactersMassGreaterThan100 = characters.filter(
+             (character) => {
+               // Filter characters with mass greater than 100
+               return parseInt(character.mass) > 100;
+             }
+           );
+           console.log(charactersMassGreaterThan100);
+           */
+
+            //Get characters with height less than 200
+            /*
+            const charactersHeightLessThan200 = characters.filter(
+              (character) => {
+                // Filter characters with height less than 200
+                return parseInt(character.height) < 200;
+              }
+            );
+            console.log(charactersHeightLessThan200);
+            */
+
+           // Get all male characters
+           /*
+           const allMaleCharacters = characters.filter(
+             (character) => {
+               // Filter characters with mass greater than 100
+               return character.gender === "male";
+             }
+           );
+           console.log(allMaleCharacters);
+           */
+
+           // Get all female characters
+           /*
+            const allFemaleCharacters = characters.filter((character) => {
+              // Filter characters with mass greater than 100
+              return character.gender === "female";
+            });
+            console.log(allFemaleCharacters);
+            */
+
+
+            // perform given operations using filter function
+
+            //Sort by name
+            /*
+            const sortCharactersByName = characters.sort((a, b) => {
+              // Compare names alphabetically
+              return a.name.localeCompare(b.name);
+            });
+            console.log(sortCharactersByName);
+            */
+
+            //Sort by mass
+            /*
+            const sortCharactersByMass = characters.sort((a, b) => {
+              // Convert mass values to numbers and compare
+              return parseInt(a.mass) - parseInt(b.mass);
+            });
+            console.log(sortCharactersByMass);
+            */
+
+            //Sort by height
+            /*
+             const sortCharactersByHeight = characters.sort((a, b) => {
+               // Convert height values to numbers and compare
+               return parseInt(a.height) - parseInt(b.height);
+             });
+             console.log(sortCharactersByHeight);
+             */
+
+             //Sort by gender
+             /*
+              const sortCharactersByGender = characters.sort((a, b) => {
+                // Compare gender properties
+                if (a.gender > b.gender) {
+                  return -1;
+                }
+                if (a.gender < b.gender) {
+                  return 1;
+                }
+                return 0;
+              });
+              console.log(sortCharactersByGender);
+              */
+
+
+              //every
+             // Does every character have blue eyes?
+             /*
+             const everyCharacterHasBlueEyes = characters.every((character) => {
+               // Check if every character has blue eyes
+               return character.eye_color === "blue";
+             });
+             console.log(everyCharacterHasBlueEyes);
+             */
+
+             //Does every character have mass more than 40?
+             /*
+             const everyCharacterHasMassMoreThan40 = characters.every((character) => {
+               // Check if every character has mass more than 40
+               return parseInt(character.mass) > 40;
+             });
+             console.log(everyCharacterHasMassMoreThan40);
+             */
+
+             //Is every character shorter than 200?
+             /*
+             const everyCharacterIsShorterThan200 = characters.every(
+               (character) => {
+                 // Check if every character is shorter than 200
+                 return parseInt(character.height) < 200;
+               }
+             );
+             console.log(everyCharacterIsShorterThan200);
+             */
+
+             //Is every character male?
+             /*
+              const everyCharacterIsMale = characters.every(
+                (character) => {
+                  // Check if every character is male
+                  return (character.gender) === "male";
+                }
+              );
+              console.log(everyCharacterIsMale);
+              */
+
+                //some
+              //Is there at least one male character?
+                /*
+              const atLeastOneMaleCharacter = characters.some((character) => {
+                // Check if there is at least one male character
+                return character.gender === "male";
+              });
+              console.log(atLeastOneMaleCharacter);
+              */
+
+              //Is there at least one character with blue eyes?
+              /*
+              const atLeastOneCharacterWithBlueEyes = characters.some((character) => {
+                // Check if there is at least one character with blue eyes
+                return character.eye_color === "blue";
+              });
+              console.log(atLeastOneCharacterWithBlueEyes);
+              */
+
+              //Is there at least one character taller than 200?
+              /*
+              const atLeastOneCharacterTallerThan200 = characters.some(
+                (character) => {
+                  // Check if there is at least one character taller than 200
+                  return parseInt(character.height) > 200;
+                }
+              );
+              console.log(atLeastOneCharacterTallerThan200);
+              */
+
+              //Is there at least one character that has mass less than 50?
+              const atLeastOneCharacterHasMassLessThan50 = characters.some(
+                (character) => {
+                  // Check if there is at least one character that has mass less than 50
+                  return parseInt(character.mass) < 50;
+                }
+              );
+              console.log(atLeastOneCharacterHasMassLessThan50);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+
+        
+
+
 
         
 
